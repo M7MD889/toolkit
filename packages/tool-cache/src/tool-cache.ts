@@ -203,7 +203,7 @@ export async function extractTar(
   let tarPath: string
   if (IS_WINDOWS) {
     // Use 7z
-    await extract7z(file, dest);
+    await extract7z(file, dest)
 
     // // Do not which tar on Windows due to incompatibilities between BSD tar and GNU tar on Windows.
     // // The version of tar at C:\Windows\System32\tar.exe is BSD tar and works properly with
